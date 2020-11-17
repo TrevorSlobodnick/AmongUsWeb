@@ -1,6 +1,6 @@
 # AmongUsWeb
 
-AmongUsWeb is a website built for the game Among Us.
+AmongUsWeb is an informational website about the game Among Us. It contains a how-to guide for beginners, Among Us in the news, talk about the developers, as well as a chat room for those looking to chat with people that also enjoy the game.
 
 ## Languages
   - HTML/CSS/JS
