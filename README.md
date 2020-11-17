@@ -30,7 +30,7 @@ AmongUsWeb is a website built for the game Among Us.
 
  > Choose your name and colour to be displayed when you send a message in the chatroom. This must be done before entering.
  
-> **ChatRoom**
+> **ChatRoom**<br/>
 > Send messages to other users that are also in the chatroom.
 
 <br/>
