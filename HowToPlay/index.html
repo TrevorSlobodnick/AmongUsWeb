@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Dosis&family=Overlock+SC&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../myersReset.css">
+    <link rel="stylesheet" href="index.css">
+    <script defer src="index.js"></script>
+    <title>How to Play Among Us</title>
+</head>
+<body>
+    <a id="home" href="https://tslobodnick.ca/AmongUsWeb">&#127968;</a>
+    <div id="hamWrapper">
+        <img id="mapNav" src="../Images/map.png" alt="navigational map">
+        <nav>
+            <ul id="navUl">
+                <li><a href="#buttons">Buttons</a></li>
+                <li><a href="#crew">Crew</a></li>
+                <li><a href="#impostor">Impostor</a></li>
+                <li><a href="#voting">Voting</a></li>
+                <li><a href="#tasks">Tasks</a></li>
+                <li><a href="#sabotage">Sabotage</a></li>
+                <li><a href="#ghost">Life After Death</a></li>
+                <li><a href="#learnMore">Learn From The Pros</a></li>
+            </ul>
+        </nav>
+    </div>
+    <section id="overview">
+        <h1>Overview</h1>
+        <p id="overviewText">
+            Before the game starts, you will be assigned a role, either crewmate or impostor.
+            The main objective as a crewmate is to finish your tasks or vote off all the 
+            impostors. While the impostors main objective is to kill crewmates until the number
+            of impostors is the same as the number of crewmates, or the crew doesn't complete a
+            sabotage in time. If an impostor kills you, you become a ghost. While your a ghost, you're
+            still responsible for finishing your tasks. And don't forget, even if you die you can still win!
+        </p>
+    </section>
+    <section id="buttons">
+        <h4>Button Index</h4>
+        <div class="subContentWrapper">
+            <div class="left">
+                <h5>General</h5>
+                <ul>
+                    <li>
+                        <img src="../Images/pushBtn.png" alt="Emergency Meeting">
+                        <p class="bntDesc">
+                            Press this button when you want to call an emergency meeting.
+                            Appears as a big red button, usually located near spawn.
+                        </p>
+                    </li>
+                    <li>
+                        <img src="../Images/report.png" alt="Report">
+                        <p class="bntDesc">
+                            Press this button to report a dead body. You can report a
+                            body as long it's in your line of site, even if
+                            the lights are off.
+                        </p>
+                    </li>
+                </ul>
+                <h5>Impostor Only</h5>
+                <ul>
+                    <li>
+                        <img src="../Images/sabotage.png" alt="Sabotage">
+                        <p class="bntDesc">
+                            Press this button to bring up a map with different sabotage options.
+                            You can only access this when you are the impostor. 
+                        </p>
+                    </li>
+                    <li>
+                        <img src="../Images/vent.png" alt="vent">
+                        <p class="bntDesc">
+                            If may have noticed different grates around every map. If you
+                            are playing as the impostor, you can stand over these grates and
+                            select the vent option to hop inside and quickly travel to connected vents.
+                        </p>
+                    </li>
+                    <li>
+                        <img src="../Images/kill.png" alt="kill">
+                        <p class="bntDesc">
+                            The most important button when playing as imposter, the kill button.
+                            When standing close to a crew make, push this button to kill them.
+                        </p>
+                    </li>
+                </ul>
+            </div>
+            <div class="right">
+                <h5>Sabotage</h5>
+                <ul>
+                    <li>
+                        <img src="../Images/Comms.png" alt="comms">
+                        <p class="bntDesc">
+                            Press this button to sabotage comms. This will make all
+                            cameras go fuzzy and make all crewmembers tasks disappear
+                            from their screen until it is fixed.
+                        </p>
+                    </li>
+                    <li>
+                        <img src="../Images/lights.png" alt="lights">
+                        <p class="bntDesc">
+                            Press this button to sabotage lights. This will make
+                            reduce the vision of all crewmembers so they can only
+                            see themselves.
+                        </p>
+                    </li>
+                    <li>
+                        <img src="../Images/reactor.png" alt="reactor">
+                        <p class="bntDesc">
+                            Press this button to sabotage reactor. This starts a countdown
+                            and if the reactor is not fixed before the time is up, the
+                            impostors win the game.
+                        </p>
+                    </li>
+                    <li>
+                        <img src="../Images/oxygen.png" alt="oxygen">
+                        <p class="bntDesc">
+                            Press this button to sabotage oxygen. This starts a countdown
+                            and if the oxygen is not fixed before the time is up, the
+                            impostors win the game.
+                        </p>
+                    </li>
+                    <li>
+                        <img src="../Images/lockdoors.png" alt="lock doors">
+                        <p class="bntDesc">
+                            Press this button to sabotage doors at a particular location. 
+                            This allows you to trap people in or lock people out of rooms
+                            for a small period of time.
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section id="crew">
+        <h4>Crew</h4>
+        <div class="subContentWrapper">
+            <div class="left">
+                <img class="mainImages" src="../Images/crewmate.png" alt="activities">
+            </div>
+            <div class="right">
+                <p class="text">
+                As a crew member, you will be playing detective while trying to finish your tasks. Tasks
+                are given to at the start of the game and can be seen on the left side of your screen. You
+                can also check which tasks you have yet to do by looking at the places highlights in yellow
+                on your map. 
+                </p>
+            </div>
+        </div>
+    </section>
+    <section id="impostor">
+        <h4>Impostor</h4>
+        <div class="subContentWrapper">
+            <div class="left">
+                <p class="text">
+                    As an imposter, your job is to murder people until there is the same amount of
+                    impostors as there are crew members. The goal of an impostor is to ultimately
+                    kill others and find ways to not only prove your innosence but to try and frame
+                    peple who are truly innocent.
+                </p>
+            </div>
+            <div class="right">
+                <img class="mainImages" src="../Images/impostor.jpg" alt="activities">
+            </div>
+        </div>
+    </section>
+    <section id="voting">
+        <h4>Voting</h4>
+        <div class="subContentWrapper">
+            <div class="left">
+                <img class="mainImages" src="../Images/voting.jpg" alt="activities">
+            </div>
+            <div class="right">
+                <p class="text">
+                When a body is found or when someone calls an emergency meeting, everyone still alive
+                in the game will be called to a voting session. This is where everyone can converse and
+                share what they know to try to figure out who the impostor is. The meeting starts off in
+                a discussion phase, where no voting is allowed, then progresses to the voting phase, where
+                you choose to vote on someone suspicious or skip the vote. And please, don't vote just because
+                someone says "sus".
+                </p>
+            </div>
+        </div>
+    </section>
+    <section id="tasks">
+        <h4>Tasks</h4>
+        <div class="subContentWrapper">
+            <div class="left">
+                <p class="text">
+                    Tasks are given to every crew member at the start of the game.
+                    One of the main objectives of the crew is to complete their all their tasks, doing so
+                    would result in a crew win. While maps do share tasks, there are some tasks that are unique to each
+                    map. Tasks are a great way to verify fellow crew mates as well as to catch imposters faking them.
+                    For more info, <a href="https://among-us.fandom.com/wiki/Tasks">check the wiki.</a>
+                </p>
+            </div>
+            <div class="right">
+                <img class="mainImages" src="../Images/tasks.png" alt="activities">
+            </div>
+        </div>
+    </section>
+    <section id="sabotage">
+        <h4>Sabotage</h4>
+        <div class="subContentWrapper">
+            <div class="left">
+                <img class="mainImages" src="../Images/sabotage_example.png" alt="activities">
+            </div>
+            <div class="right">
+                <p class="text">
+                    As an imposter, you have the ability to sabotage people. At the bottom right
+                    of your screen there is a sabotage button, and when pressed, will bring up a
+                    map with a bunch of different icons (see <a href="#buttons">buttons</a>
+                    to learn more). Although sabotages are a great way to get out of a sticky situation
+                    or get an easy kill, they do have cooldowns, so use them wisely.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section id="ghost">
+        <h4>Life After Death</h4>
+        <div class="subContentWrapper">
+            <div class="left">
+                <p class="text">
+                    Once you die in the game, you become a ghost.
+                    Even though your technically dead, your still required to
+                    do your tasks if the crew hopes to get a task win. If you
+                    are in a voice chat, you will have to stay muted for the rest
+                    of the game, and the only other people you can talk in text chat
+                    are other dead people.
+                </p>
+            </div>
+            <div class="right">
+                <img class="mainImages" src="../Images/ghostsdotasks.jpg" alt="activities">
+            </div>
+        </div>
+    </section>
+    <section id="learnMore">
+        <h4>Learn From The Pros</h4>
+        <p>
+            One of the best ways to get good fast is to watch how the pros do it.
+            Your not just learning how to play, but you'll get a good laugh out of it too.
+            Check out these guys on youtube!
+        </p>
+        <div id="proListWrapper">
+            <ul>
+                <li id="toast">
+                    <figure>
+                        <a href="https://www.youtube.com/channel/UCUT8RoNBTJvwW1iErP6-b-A">
+                            <img src="../Images/toast.jpg" alt="toast">
+                            <figcaption>Disguised Toast</figcaption>
+                        </a>
+                    </figure>
+                </li>
+                <li id="xQc">
+                    <figure>
+                        <a href="https://www.youtube.com/channel/UCmDTrq0LNgPodDOFZiSbsww">
+                            <img src="../Images/xqc.jpg" alt="xQcOW">
+                            <figcaption>xQcOW</figcaption>
+                        </a>
+                    </figure>
+                </li>
+                <li id="Trainwreckstv">
+                    <figure>
+                        <a href="https://www.youtube.com/channel/UCbYVxiNJmsbhvlUmy4_JbXA">
+                            <img src="../Images/trainwreckstv.jpg" alt="trainwreckstv">
+                            <figcaption>Trainwreckstv</figcaption>
+                        </a>
+                    </figure>
+                </li>
+            </ul>
+        </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,177 @@
+#home{
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    width: auto;
+    background-color: transparent;
+    border-color: transparent;
+    border-radius: 25%;
+    font-size: 2em;
+}
+
+#home:link, #home:visited{
+    text-decoration: none;
+    color: inherit;
+}
+
+#home:hover{
+    border-color: #1be2e2;
+}
+
+body{
+    position: relative;
+    background-image: url("../Images/stars.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+section{
+    min-height: 100vh;
+}
+
+h1{
+    font-family: 'Overlock SC', sans-serif;
+    min-height: 20vh;
+    text-align: center;
+    font-size: 4em;
+}
+
+#flexWrapper{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+}
+
+a:link, a:visited{
+    text-decoration: none;
+    color: inherit;
+}
+
+article{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5vh;
+}
+
+a{
+    display: block;
+    width: 60%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: solid thin white;
+    border-radius: 25px;
+}
+
+a:hover{
+    border-color: #1be2e2;
+}
+
+.wrapperDiv{
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.imgDiv{
+    flex: 1;
+}
+
+.articleImg{
+    /* 
+    shrink to:
+    width: 112px;
+    height: 112px; 
+    */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+    border: solid thin white;
+    border-radius: 15px;
+}
+
+.contentDiv{
+    flex: 2;
+}
+
+.articleTitle{
+    font-family: 'Dosis', sans-serif;
+    font-size: 1.7em;
+    text-align: center;
+    padding: 10px;
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.date{
+    text-align: center;
+    padding-top: 5px;
+}
+
+.journal{
+    text-align: left;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    text-decoration: underline;
+    text-decoration-color: gray;
+    font-style: italic;
+}
+
+
+
+
+
+
+
+
+/* MOBILE STYLES */
+
+/*PHONES*/
+@media only screen
+and (min-device-width: 1px) and (max-device-width: 600px){
+    a{
+        width: 90%;
+    }
+
+    .articleImg{
+        width: 112px;
+        height: 112px; 
+    }
+
+    .articleTitle{
+        font-size: 1.2em;
+        text-align: center;
+        padding: 10px;
+        width: 80%;
+    }
+
+    .contentDiv{
+        margin-left: 5px;
+        padding-bottom: 1.5em;
+    }
+    
+    .journal{
+        text-align: left;
+        position: absolute;
+        bottom: 0px;
+        right: 0px;
+    }
+
+    body{
+        background-attachment: fixed;
+        background-position: center;
+        background-size: contain;
+        background-repeat: repeat;
+    }
+}

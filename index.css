@@ -1,0 +1,188 @@
+/* font-family: 'Orbitron', sans-serif;
+font-family: 'Overlock SC', cursive; 
+font-family: 'Dosis', sans-serif;*/
+
+
+#downloads, #bigBtns, #medBtns{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#landingSect{
+    min-height: 100vh;
+    background-image: url("Images/using.jpg");
+    background-size: 100% 100%;
+    background-color: black;
+    background-repeat: no-repeat;
+}
+
+#landingWrapper{
+    min-height: 100vh;
+    display: flex;
+    align-items: flex-end;
+    text-align: center;
+}
+
+#buttons{
+    flex: 1;
+}
+
+svg{
+    width: 100%;
+    fill: white;
+}
+
+#downloads{
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.dlLinks{
+    min-height: 4vh;
+}
+
+a > svg{
+    width: 30%;
+    text-align: center;
+}
+
+button{
+    background-color: transparent;
+    border: 3px solid white;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+button > a{
+    display: block;
+    color: white;
+    text-decoration: none;
+}
+
+
+#bigBtns, #medBtns{
+    display: flex;
+}
+
+#bigBtns button, #medBtns button{
+    width: 47.5%;
+}
+
+#bigBtns button:nth-of-type(2), #medBtns button:nth-of-type(2){
+    margin-left: 5%;
+}
+
+#bigBtns a{
+    font-size: 3em;
+}
+
+#medBtns a{
+    font-size: 2em;
+}
+
+#medBtns{
+    margin-top: 10px;
+}
+
+
+
+/* Toggle Classes (JS) */
+.blackText{
+    color: black;
+}
+
+.whiteBg{
+    background-color: white;
+}
+
+
+
+
+/* MOBILE STYLES */
+
+/*TABLETS*/
+@media only screen
+and (min-device-width: 601px) and (max-device-width: 1000px){
+
+    #landingSect{
+        background-image: url("Images/med_using.jpg");
+    }
+
+    #downloads, #bigBtns, #medBtns{
+        width: 60%;
+    }
+
+    #downloads a, #bigBtns a, #medBtns a{
+        font-size: 1.8em;
+    }
+
+    #medBtns{
+        margin-bottom: 2%;
+    }
+}
+
+@media only screen
+and (min-device-width: 601px) and (max-device-width: 1000px) and (orientation: landscape){
+
+    #landingSect{
+        background-image: url("Images/med_using.jpg");
+    }
+
+    #downloads, #bigBtns, #medBtns{
+        width: 60%;
+    }
+
+    #downloads a, #bigBtns a, #medBtns a{
+        font-size: 1.8em;
+    }
+}
+
+/*PHONES*/
+@media only screen
+and (min-device-width: 1px) and (max-device-width: 600px){
+
+    #landingSect{
+        background-image: url("Images/using.jpg"), url("Images/stars.jpg");
+        background-size: contain, contain;
+        background-position: top, center;
+        background-repeat: no-repeat, repeat;
+    }
+
+    #downloads, #bigBtns, #medBtns{
+        width: 90%;
+    }
+
+    #downloads a, #bigBtns a, #medBtns a{
+        font-size: 1.5em;
+    }
+
+    #medBtns{
+        margin-bottom: 5%;
+    }
+}
+
+@media only screen
+and (min-device-width: 1px) and (max-device-width: 600px) and (orientation: landscape){
+
+    #landingSect{
+        background-image: url("Images/using.jpg");
+        background-size: contain;
+        background-position: top;
+    }
+
+    #downloads, #bigBtns, #medBtns{
+        width: 60%;
+    }
+
+    #downloads a, #bigBtns a, #medBtns a{
+        font-size: 1em;
+    }
+
+    #medBtns{
+        margin-top: 1%;
+        margin-bottom: 1%;
+    }
+}

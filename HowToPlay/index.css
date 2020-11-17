@@ -1,0 +1,378 @@
+/* Basics START */
+
+#home{
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    width: auto;
+    background-color: transparent;
+    border-color: transparent;
+    border-radius: 25%;
+    font-size: 2em;
+    z-index: 2;
+}
+
+#home:link, #home:visited{
+    text-decoration: none;
+    color: inherit;
+}
+
+#home:hover{
+    border-color: #1be2e2;
+}
+
+a:link, a:visited{
+    text-decoration: none;
+    color: #1be2e2;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+/* Basics END */
+
+#home{
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    padding: 1% 2%;
+    background-color: transparent;
+    border-color: white;
+    border-radius: 25%;
+    font-size: 2em;
+}
+
+#home:focus{
+    outline: none;
+    border-radius: 25%;
+}
+
+#home:active{
+    border-color: transparent;
+}
+
+body{
+    position: relative;
+    background-image: url("../Images/stars.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+section{
+    width: 100%;
+    min-height: 100vh;
+}
+
+#buttons, #crew, #impostor, #voting, #sabotage, #ghost{
+    display: flex;
+    flex-direction: column;
+}
+
+.subContentWrapper{
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+h4{
+    font-family: 'Overlock SC', cursive; 
+    font-size: 5em;
+}
+
+.left, .right{
+    flex: 1;
+    flex-grow: 1;
+    box-sizing: border-box;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+.mainImages{
+    width: 90%;
+}
+
+.text{
+    font-family: 'Dosis', sans-serif;
+    font-size: 1.5em;
+    line-height: 1.5em;
+}
+
+/* Overview Section */
+
+#overview{
+    position: relative;
+}
+
+#overview::before{
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-image: url("../Images/bg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    filter: brightness(30%);
+}
+
+h1{
+    position: relative;
+    font-family: 'Overlock SC', cursive; 
+    text-align: center;
+    font-size: 5em;
+}
+
+#overviewText{
+    position: relative;
+    text-align: center;
+    width: 85%;
+    font-family: 'Dosis', sans-serif;
+    font-size: 2em;
+    line-height: 1.5em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Overview Section End */
+
+/* Buttons Section */
+#buttons li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#buttons img{
+    width: 15%;
+}
+
+#buttons p{
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+    padding: 1.5%;
+    box-sizing: border-box;
+    border: solid thin white;
+    border-radius: 15px;
+}
+
+h5{
+    font-size: 2em;
+    text-align: center;
+}
+/* Buttons Section End */
+
+/* Pros Section Start */
+
+#learnMore{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: stretch;
+}
+
+#learnMore h4{
+    flex: 1;
+}
+
+#learnMore p{
+    text-align: center;
+    font-size: 2em;
+}
+
+#proListWrapper{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#proListWrapper ul{
+    text-align: center;
+    width: 60%;
+    display: flex;
+}
+
+#proListWrapper li{
+    flex: 1;
+}
+
+#proListWrapper img{
+    border-radius: 50%;
+}
+
+/* Pros Section End */
+
+#mapNav{
+    cursor: pointer;
+    width: 40%;
+}
+
+#hamWrapper{
+    padding-right: 5px;
+    z-index: 2;
+    top: 0;
+    right: 0;
+    position: fixed;
+    text-align: right;
+}
+
+#navUl{
+    height: 0px;
+    max-height: 45vh;
+    overflow: hidden;
+    text-align: center;
+    transition: height 0.8s;
+}
+
+#navUl li{
+    font-size: 1.5em;
+    min-height: 5vh;
+    background-color: white;
+    color: black;
+    border-top: thin solid black;
+    cursor: pointer;
+}
+
+#navUl a{
+    display: block;
+}
+
+#navUl a:visited, #navUl a:link{
+    color: black;
+}
+
+#navUl li:hover{
+    background-color: gray;
+}
+
+.lowbrightness{
+    filter: brightness(50%);
+}
+
+
+
+
+
+
+/* MOBILE STYLES */
+
+/*TABLETS*/
+@media only screen
+and (min-device-width: 601px) and (max-device-width: 1000px){
+
+
+}
+
+@media only screen
+and (min-device-width: 601px) and (max-device-width: 1000px) and (orientation: landscape){
+
+}
+
+/*PHONES*/
+@media only screen
+and (min-device-width: 1px) and (max-device-width: 600px){
+
+    #mapNav{
+        width: 30%;
+    }
+
+     h1{
+         font-size: 3em;
+     }
+
+     #overview::before{
+        content: "";
+        background-image: none;
+    }
+
+     #overviewText{
+        margin-top: 10%;
+        font-size: 1.2em;
+        line-height: 1.2em;
+    }
+
+    h4{
+        font-size: 3em;
+        margin-top: 10%;
+    }
+
+    .left h5:first-of-type{
+        margin-top: 10%;
+        margin-bottom: 0px;
+    }
+
+    h5{
+        text-align: center;
+        font-size: 1.6em;
+        margin-bottom: 5%;
+        text-decoration: underline;
+        text-decoration-color: gray;
+    }
+
+    #buttons .subContentWrapper{
+        flex-direction: column;
+    }
+    
+    #buttons img{
+        width: 30%;
+    }
+
+    #buttons li{
+        margin-bottom: 5%;
+    }
+    
+    #buttons p{
+        font-size: 1.1em;
+        line-height: 1.2em;
+    }
+
+    .subContentWrapper{
+        flex-direction: column;
+    }
+
+    #impostor .subContentWrapper, #tasks .subContentWrapper, #ghost .subContentWrapper{
+        flex-direction: column-reverse;
+    }
+
+    .text{
+        margin-top: 5%;
+        text-align: center;
+    }
+
+    #learnMore p{
+        font-size: 1.5em;
+        line-height: 1.2em;
+    }
+
+    #proListWrapper{
+        width: 100%;
+        align-items: space-evenly;
+        justify-content: space-evenly;
+    }
+
+    #proListWrapper ul{
+        width: 100%; 
+    }
+
+    body{
+        background-size: contain;
+        background-attachment: fixed;
+        background-repeat: repeat;
+    }
+    
+
+}
+
+@media only screen
+and (min-device-width: 1px) and (max-device-width: 600px) and (orientation: landscape){
+    #navUl li{
+        font-size: 1.4em;
+        min-height: 5vh;
+    }
+
+}

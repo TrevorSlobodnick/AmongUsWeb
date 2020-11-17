@@ -1,0 +1,343 @@
+/* 1.0 Remove Link Styles */
+
+a:link{
+    color: #1be2e2;
+    text-decoration: none;
+    font-style: italic;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+a:visited{
+    color: #1be2e2;
+}
+
+/* 1.0 END*/
+
+/*********************************************************************************************************/
+
+/* 2.0 Min Heights */
+
+section:first-of-type{
+    width: 100%;
+    min-height: 55vh;
+}
+
+section:nth-of-type(2), section:nth-of-type(3){
+    width: 100%;
+    min-height: 100vh;
+}
+
+h1{
+    min-height: 10vh;
+}
+
+#slothWrapper{
+    min-height: 25vh;
+}
+
+h4{
+    min-height: 15vh;
+}
+
+#devWrapper{
+    min-height: 45vh;
+}
+
+/* 2.0 END */
+
+#home{
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    width: auto;
+    background-color: transparent;
+    border-color: transparent;
+    border-radius: 25%;
+    font-size: 2em;
+}
+
+#home:link, #home:visited{
+    text-decoration: none;
+    color: inherit;
+    font-style: normal;
+}
+
+#home:hover{
+    border-color: #1be2e2;
+}
+
+body{
+    position: relative;
+    background-image: url("../Images/stars.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+h1{
+    font-family: 'Orbitron', sans-serif;
+    text-align: center;
+    font-size: 4em;
+}
+
+img{
+    width: 25%;
+    background-color: white;
+    border-radius: 50%;
+}
+
+h4{
+    padding-top: 2vh;
+    margin-bottom: 2vh;
+    text-align: center;
+    font-size: 3em;
+}
+
+p, #slothDesc ul li{
+    font-family: 'Dosis', sans-serif;
+}
+
+#slothDesc p:first-of-type{
+    font-size: 2em;
+    margin-top: 2%;
+    margin-bottom: 5%;
+}
+
+#slothDesc p:last-of-type{
+    text-align: center;
+    margin-top: 5%;
+}
+
+p#transform{
+    font-family: 'Overlock SC', sans-serif;
+}
+
+#slothDesc ul li{
+    font-size: 1.5em;
+    margin-left: 10%;
+    margin-bottom: 2%;
+    list-style-type: decimal;
+}
+
+.ulFlex{
+    text-align: center;
+    display: flex;
+}
+
+.ulFlex li{
+    flex: 1;
+}
+
+.ulFlex:nth-of-type(1) li{
+    box-sizing: border-box;
+    border-left: solid thin white;
+    margin-left: 4px;
+}
+
+.ulFlex > li > h6{
+    text-align: left;
+}
+
+#alignRight{
+    width: 100%;
+    text-align: right;
+}
+
+.desc{
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+    padding: 4px;
+}
+
+.name{
+    font-size: 1.5em;
+    margin-top: 3px;
+    margin-left: 10px;
+    margin-bottom: 3px;
+}
+
+.paragraph{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.vote{
+    box-sizing: border-box;
+    border-left: solid thin white;
+    margin-left: 4px;
+}
+
+#slothWrapper{
+    display: flex;
+    padding-bottom: 2vh;
+    border-bottom: solid thin white;
+}
+
+#slothLogo, #slothDesc{
+    flex: 1;
+}
+
+figure{
+    text-align: center;
+}
+
+figure > img{
+    width: 50%;
+    border-radius: 10px;
+}
+
+figcaption{
+    text-align: center;
+}
+
+p{
+    font-size: 1.2em;
+}
+
+
+/* Javascript for when vote button is clicked */
+/* Styles for the info that appears after voting */
+
+#transformOutterWrapper{
+    min-height: 55vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.transform{
+    font-size: 3em;
+    color: gray;
+    font-variant: small-caps;
+    text-align: center;
+}
+
+.btn{
+    cursor: pointer;
+}
+
+/*********************************************************************************************************/
+
+/* Merch Section */
+
+#merchOutterWrapper{
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: stretch;
+}
+
+#merchInnerWrapper1{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 85vh;
+}
+
+#merchInnerWrapper1 p{
+    text-align: center;
+    margin-top: 1%;
+    font-size: 1.5em;
+    line-height: 1.3em;
+}
+
+#merchInnerWrapper1 img{
+    display: block;
+    margin-top: 1%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#merchInnerWrapper2{
+    text-align: center;
+    min-height: 5vh;
+    align-content: center;
+}
+
+
+/* MOBILE STYLES */
+
+/*TABLETS*/
+@media only screen
+and (max-device-width: 1000px){
+    #merchInnerWrapper1{
+        width: 95%;
+        min-height: 80vh;
+    }
+
+    #merchInnerWrapper2{
+        min-height: 10vh;
+    }
+
+}
+
+/*PHONES*/
+@media only screen
+and (min-device-width: 1px) and (max-device-width: 600px){
+
+    #slothWrapper{
+        flex-direction: column;
+    }
+
+
+    #slothDesc{
+        padding: 0px 5%;
+    }
+
+    .ulFlex:first-of-type{
+        flex-direction: column;
+    }
+
+    .ulFlex:nth-of-type(2){
+        margin-top: 10%;
+    }
+
+    .vote button{
+        border-left: none;
+        width: 100%;
+        font-size: 1.5em;
+    }
+
+    .vote, .ulFlex:nth-of-type(1) li{
+        border-left: none;
+    }
+
+    .vote:first-of-type button::after{
+        content: "\00000aForest";
+        white-space: pre;
+    }
+
+    .vote:nth-of-type(2) button::after{
+        content: "\00000aMarcus";
+        white-space: pre;
+    }
+
+    .vote:nth-of-type(3) button::after{
+        content: "\00000aTrevor";
+        white-space: pre;
+    }
+
+    .vote:nth-of-type(4) button::after{
+        content: "\00000aAmy";
+        white-space: pre;
+    }
+
+    #merchInnerWrapper1{
+        width: 95%;
+    }
+
+    body{
+        background-size: contain;
+        background-repeat: repeat;
+    }
+}

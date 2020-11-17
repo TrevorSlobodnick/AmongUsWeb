@@ -1,0 +1,205 @@
+#home{
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    width: auto;
+    background-color: transparent;
+    border-color: transparent;
+    border-radius: 25%;
+    font-size: 2em;
+    z-index: 2;
+}
+
+#home:link, #home:visited{
+    text-decoration: none;
+    color: inherit;
+}
+
+#home:hover{
+    border-color: #1be2e2;
+}
+
+body{
+    position: relative;
+    color: white;
+    background-image: url("../Images/stars.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#colors{
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-between;
+}
+
+.colorWrapper{
+    cursor: pointer;
+    position: relative;
+    width: 16%;
+}
+
+input[type='radio']{
+    width: 10%;
+    position: absolute;
+    left: 0;
+    top: 50%;
+}
+
+input[type="radio"]{
+    visibility: hidden;
+}
+
+label{
+    cursor: pointer;
+    width: 100%;
+}
+
+img{
+    display: block;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.selected{
+    background-color: gray;
+}
+
+form{
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: stretch;
+}
+
+#colors{
+    flex: 1;
+}
+
+#other{
+    flex: 6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#vertCenter{
+    flex: 1;
+}
+
+
+
+
+
+input[type="text"]{
+    color: black;
+    background-color: gray;
+    font-size: 1.5em;
+    border: none;
+    border-bottom: solid thin white;
+    border-radius: 5px;
+}
+
+input[type="text"]:focus{
+    outline: none;
+    border-bottom: solid thin skyblue;
+}
+
+input[type="text"]::placeholder{
+    opacity: 0.60;
+    color: black;
+}
+
+input[type="submit"]{
+    font-size: 1.5em;
+    cursor: pointer;
+    border: solid black thin;
+    background-color: #1be2e2;
+    border-radius: 5px;
+}
+
+input[type="submit"]:hover{
+    box-shadow: 2px 0px 3px white, -2px 0px 3px white, 0px 2px 3px white, 0px -2px 3px white;
+    border-color: #1be2e2;
+}
+
+
+
+
+/* MOBILE STYLES */
+
+/*TABLETS*/
+@media only screen
+and (min-device-width: 601px) and (max-device-width: 1000px){
+    input[type="text"]{
+        padding-top: 5%;
+    }
+
+    input[type="submit"]{
+        vertical-align: top;
+        padding: 2.5%;
+    }
+
+    #other{
+        width: 80%;
+        text-align: center;
+    }
+
+}
+
+/*PHONES*/
+@media only screen
+and (min-device-width: 1px) and (max-device-width: 600px){
+    img{
+        width: 75%;
+    }
+
+    .colorWrapper{
+        width: 25%;
+    }
+
+    #other{
+        position: relative;
+        flex: 5;
+    }
+    
+    #vertCenter{
+        position: absolute;
+        bottom: 5%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    input[type="text"]{
+        padding-top: 5%;
+    }
+
+    input[type="submit"]{
+        padding: 5% 0px;
+        margin-top: 5%;
+    }
+
+    body{
+        background-size: contain;
+        background-repeat: repeat;
+    }
+}
+
+@media only screen
+and (min-device-width: 1px) and (max-device-width: 600px) and (orientation: landscape){
+    img{
+        width: 70%;
+    }
+
+    .colorWrapper{
+        width: 16%;
+    }
+    
+}
