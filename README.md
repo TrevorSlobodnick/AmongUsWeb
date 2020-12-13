@@ -31,11 +31,9 @@ AmongUsWeb is an informational website about the game Among Us. It contains a ho
  > Choose your name and colour to be displayed when you send a message in the chatroom. This must be done before entering.
  
 > **ChatRoom**<br/>
-> Send messages to other users that are also in the chatroom.
+> Send messages to other users that are also in the chatroom.<br/>
 
-<br/>
-##### If you haven't already, make sure you check out the site! [link]
-<br/>
+##### If you haven't already, make sure you check out the site! [link]<br/>
 
 License
 ----
